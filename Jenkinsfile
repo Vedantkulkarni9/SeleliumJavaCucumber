@@ -10,7 +10,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/YOUR-REPO.git'
+                git 'https://github.com/VEDANTKULKARNI9.git'
             }
         }
 
