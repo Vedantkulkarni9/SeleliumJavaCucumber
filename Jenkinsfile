@@ -33,19 +33,41 @@ pipeline {
         }
     }
 
-    post {
-        always {
-            emailext (
-                subject: "Extent Report - ${env.JOB_NAME}",
-                body: """
-Execution completed.
+   post {
 
-Build: ${env.JOB_NAME} #${env.BUILD_NUMBER}
+    success {
+        emailext (
+            subject: "✅ SUCCESS: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+            body: """
+Build Status: SUCCESS
+
+Job: ${env.JOB_NAME}
+Build Number: ${env.BUILD_NUMBER}
+
 URL: ${env.BUILD_URL}
 """,
-                attachmentsPattern: '**/ExtentReport.html',
-                to: "vedantkulkarni9@gmail.com"
-            )
-        }
+            attachmentsPattern: '**/ExtentReport.html',
+            to: "vedantkulkarni9@gmail.com"
+        )
     }
+
+    failure {
+        emailext (
+            subject: "❌ FAILURE: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+            body: """
+Build Status: FAILURE
+
+Job: ${env.JOB_NAME}
+Build Number: ${env.BUILD_NUMBER}
+
+Check logs: ${env.BUILD_URL}
+""",
+            to: "vedantkulkarni9@gmail.com"
+        )
+    }
+
+    always {
+        echo "Pipeline completed"
+    }
+}
 }
