@@ -44,7 +44,7 @@ Build: ${env.JOB_NAME} #${env.BUILD_NUMBER}
 URL: ${env.BUILD_URL}
 """,
                 attachmentsPattern: '**/ExtentReport.html',
-                to: "yourmail@gmail.com"
+                to: "vedantkulkarni9@gmail.com"
             )
         }
     }
