@@ -5,7 +5,7 @@ Feature: Purchase the order from Ecommerce Website
 	Background:
 	Given I landed on Ecommerce Page
 
-  @vedant
+  @vedant   
   Scenario Outline: Positive Test of Submitting the order
   
     Given Logged in with username <name> and password <password>
