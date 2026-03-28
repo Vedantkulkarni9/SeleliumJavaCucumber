@@ -10,7 +10,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/Vedantkulkarni9/SeleniumJavaCucumber.git'
+                git 'https://github.com/Vedantkulkarni9/SeleliumJavaCucumber.git'
             }
         }
 
