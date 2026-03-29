@@ -22,7 +22,7 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                bat 'mvn test -Dbrowser=chrome'
+                bat 'mvn test -Dbrowser=chromeheadless'
             }
         }
 
