@@ -55,7 +55,7 @@ Build Number: ${env.BUILD_NUMBER}
 
 URL: ${env.BUILD_URL}
 """,
-                attachmentsPattern: '**/ExtentReport.html',
+                attachmentsPattern: '**/reports/index.html',
                 to: "vedantkulkarni9@gmail.com"
             )
         }
