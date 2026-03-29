@@ -44,11 +44,7 @@ pipeline {
     }
 }
 
-        stage('Debug Reports') {
-    steps {
-        bat 'dir reports'
-    }
-}
+       
     }
 
     post {
@@ -58,6 +54,7 @@ pipeline {
 
             // Keep junit here (single place)
             junit '**/target/surefire-reports/*.xml'
+            bat 'dir reports'
         }
 
         success {
@@ -71,7 +68,7 @@ Build Number: ${env.BUILD_NUMBER}
 
 URL: ${env.BUILD_URL}
 """,
-                attachmentsPattern: '**/reports/index.html',
+                attachmentsPattern: 'reports/index.html',
                 to: "vedantkulkarni9@gmail.com"
             )
         }
