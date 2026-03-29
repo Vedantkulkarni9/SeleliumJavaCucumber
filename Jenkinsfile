@@ -33,6 +33,16 @@ pipeline {
                 junit '**/target/surefire-reports/*.xml'
             }
         }
+
+        stage('Publish Extent Report') {
+           steps {
+        publishHTML([
+            reportDir: 'reports',
+            reportFiles: 'ExtentReport.html',
+            reportName: 'Extent Report'
+        ])
+    }
+}
     }
 
     post {
