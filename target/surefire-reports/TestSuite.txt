@@ -1,61 +1,77 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 15, Failures: 9, Errors: 0, Skipped: 5, Time elapsed: 6.878 s <<< FAILURE! - in TestSuite
-launchApplication(rahulshettyacademy.tests.SubmitOrderTest)  Time elapsed: 0.416 s  <<< FAILURE!
-org.openqa.selenium.remote.NoSuchDriverException: 
-Unable to obtain: msedgedriver, error msedgedriver must exist: edge.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Tests run: 17, Failures: 10, Errors: 0, Skipped: 7, Time elapsed: 10.343 s <<< FAILURE! - in TestSuite
+launchApplication(rahulshettyacademy.tests.SubmitOrderTest)  Time elapsed: 2.708 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 142
+Current browser version is 146.0.7680.165 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'DELL', ip: '192.168.0.103'
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: driver.version: EdgeDriver
-Caused by: java.lang.IllegalStateException: msedgedriver must exist: edge.exe
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
 
-tearDown(rahulshettyacademy.tests.SubmitOrderTest)  Time elapsed: 0.417 s  <<< FAILURE!
+tearDown(rahulshettyacademy.tests.SubmitOrderTest)  Time elapsed: 2.709 s  <<< FAILURE!
 java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because "this.driver" is null
 
-launchApplication(rahulshettyacademy.tests.SubmitOrderTest)  Time elapsed: 0.418 s  <<< FAILURE!
-org.openqa.selenium.remote.NoSuchDriverException: 
-Unable to obtain: msedgedriver, error msedgedriver must exist: edge.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+launchApplication(rahulshettyacademy.tests.SubmitOrderTest)  Time elapsed: 4.109 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 142
+Current browser version is 146.0.7680.165 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'DELL', ip: '192.168.0.103'
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: driver.version: EdgeDriver
-Caused by: java.lang.IllegalStateException: msedgedriver must exist: edge.exe
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
 
-tearDown(rahulshettyacademy.tests.SubmitOrderTest)  Time elapsed: 0.419 s  <<< FAILURE!
+tearDown(rahulshettyacademy.tests.SubmitOrderTest)  Time elapsed: 4.111 s  <<< FAILURE!
 java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because "this.driver" is null
 
-runScenario(cucumber.TestNGTestRunner)  Time elapsed: 0.078 s  <<< FAILURE!
-org.openqa.selenium.remote.NoSuchDriverException: 
-Unable to obtain: msedgedriver, error msedgedriver must exist: edge.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+runScenario(cucumber.TestNGTestRunner)  Time elapsed: 1.562 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 142
+Current browser version is 146.0.7680.165 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'DELL', ip: '192.168.0.103'
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: driver.version: EdgeDriver
-Caused by: java.lang.IllegalStateException: msedgedriver must exist: edge.exe
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
 
-launchApplication(rahulshettyacademy.tests.ErrorValidationsTest)  Time elapsed: 0.112 s  <<< FAILURE!
-org.openqa.selenium.remote.NoSuchDriverException: 
-Unable to obtain: msedgedriver, error msedgedriver must exist: edge.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+launchApplication(rahulshettyacademy.tests.ErrorValidationsTest)  Time elapsed: 2.991 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 142
+Current browser version is 146.0.7680.165 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'DELL', ip: '192.168.0.103'
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: driver.version: EdgeDriver
-Caused by: java.lang.IllegalStateException: msedgedriver must exist: edge.exe
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
 
-tearDown(rahulshettyacademy.tests.ErrorValidationsTest)  Time elapsed: 0.112 s  <<< FAILURE!
+tearDown(rahulshettyacademy.tests.ErrorValidationsTest)  Time elapsed: 2.992 s  <<< FAILURE!
 java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because "this.driver" is null
 
-launchApplication(rahulshettyacademy.tests.ErrorValidationsTest)  Time elapsed: 0.115 s  <<< FAILURE!
-org.openqa.selenium.remote.NoSuchDriverException: 
-Unable to obtain: msedgedriver, error msedgedriver must exist: edge.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+launchApplication(rahulshettyacademy.tests.ErrorValidationsTest)  Time elapsed: 4.873 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 142
+Current browser version is 146.0.7680.165 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'DELL', ip: '192.168.0.103'
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: driver.version: EdgeDriver
-Caused by: java.lang.IllegalStateException: msedgedriver must exist: edge.exe
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
 
-tearDown(rahulshettyacademy.tests.ErrorValidationsTest)  Time elapsed: 0.115 s  <<< FAILURE!
+tearDown(rahulshettyacademy.tests.ErrorValidationsTest)  Time elapsed: 4.873 s  <<< FAILURE!
 java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because "this.driver" is null
+
+setup(rahulshettyacademy.tests.LoginTest)  Time elapsed: 5.648 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 142
+Current browser version is 146.0.7680.165 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'DELL', ip: '192.168.0.103'
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+	at rahulshettyacademy.tests.LoginTest.setup(LoginTest.java:17)
 

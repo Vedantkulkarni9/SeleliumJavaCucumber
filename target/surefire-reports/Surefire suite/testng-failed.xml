@@ -26,6 +26,13 @@
           <include name="setUpClass"/>
         </methods>
       </class> <!-- cucumber.TestNGTestRunner -->
+      <class name="rahulshettyacademy.tests.LoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="testCheckboxSelection"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- rahulshettyacademy.tests.LoginTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->
