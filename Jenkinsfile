@@ -99,7 +99,7 @@ Tests failed.
 Check report:
 ${env.BUILD_URL}
 """,
-        attachmentsPattern: 'reports/index.html'   
+        attachmentsPattern: 'reports/index.html',   
         to: "vedantkulkarni9@gmail.com"
     )
 }   
