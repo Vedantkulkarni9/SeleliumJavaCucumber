@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 17, Failures: 10, Errors: 0, Skipped: 7, Time elapsed: 10.343 s <<< FAILURE! - in TestSuite
-launchApplication(rahulshettyacademy.tests.SubmitOrderTest)  Time elapsed: 2.708 s  <<< FAILURE!
+Tests run: 13, Failures: 6, Errors: 0, Skipped: 7, Time elapsed: 8.663 s <<< FAILURE! - in TestSuite
+launchApplication(rahulshettyacademy.tests.SubmitOrderTest)  Time elapsed: 2.679 s  <<< FAILURE!
 org.openqa.selenium.SessionNotCreatedException: 
 Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 142
 Current browser version is 146.0.7680.165 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
@@ -12,10 +12,7 @@ System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.v
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
 
-tearDown(rahulshettyacademy.tests.SubmitOrderTest)  Time elapsed: 2.709 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because "this.driver" is null
-
-launchApplication(rahulshettyacademy.tests.SubmitOrderTest)  Time elapsed: 4.109 s  <<< FAILURE!
+launchApplication(rahulshettyacademy.tests.SubmitOrderTest)  Time elapsed: 3.888 s  <<< FAILURE!
 org.openqa.selenium.SessionNotCreatedException: 
 Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 142
 Current browser version is 146.0.7680.165 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
@@ -25,10 +22,7 @@ System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.v
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
 
-tearDown(rahulshettyacademy.tests.SubmitOrderTest)  Time elapsed: 4.111 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because "this.driver" is null
-
-runScenario(cucumber.TestNGTestRunner)  Time elapsed: 1.562 s  <<< FAILURE!
+runScenario(cucumber.TestNGTestRunner)  Time elapsed: 1.251 s  <<< FAILURE!
 org.openqa.selenium.SessionNotCreatedException: 
 Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 142
 Current browser version is 146.0.7680.165 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
@@ -38,7 +32,7 @@ System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.v
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
 
-launchApplication(rahulshettyacademy.tests.ErrorValidationsTest)  Time elapsed: 2.991 s  <<< FAILURE!
+launchApplication(rahulshettyacademy.tests.ErrorValidationsTest)  Time elapsed: 2.429 s  <<< FAILURE!
 org.openqa.selenium.SessionNotCreatedException: 
 Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 142
 Current browser version is 146.0.7680.165 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
@@ -48,10 +42,7 @@ System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.v
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
 
-tearDown(rahulshettyacademy.tests.ErrorValidationsTest)  Time elapsed: 2.992 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because "this.driver" is null
-
-launchApplication(rahulshettyacademy.tests.ErrorValidationsTest)  Time elapsed: 4.873 s  <<< FAILURE!
+launchApplication(rahulshettyacademy.tests.ErrorValidationsTest)  Time elapsed: 3.662 s  <<< FAILURE!
 org.openqa.selenium.SessionNotCreatedException: 
 Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 142
 Current browser version is 146.0.7680.165 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
@@ -61,10 +52,7 @@ System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.v
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
 
-tearDown(rahulshettyacademy.tests.ErrorValidationsTest)  Time elapsed: 4.873 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because "this.driver" is null
-
-setup(rahulshettyacademy.tests.LoginTest)  Time elapsed: 5.648 s  <<< FAILURE!
+setup(rahulshettyacademy.tests.LoginTest)  Time elapsed: 4.276 s  <<< FAILURE!
 org.openqa.selenium.SessionNotCreatedException: 
 Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 142
 Current browser version is 146.0.7680.165 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 

@@ -50,11 +50,11 @@ public class BaseTest {
 
 		if (browserName.contains("chrome")) {
 			ChromeOptions options = new ChromeOptions();
-			WebDriverManager.chromedriver().setup();
+			WebDriverManager.chromedriver().setup();	
+			WebDriverManager.chromedriver().clearResolutionCache();
 			if(browserName.contains("headless")){
 			options.addArguments("--headless=new");
 			options.addArguments("--disable-gpu");
-			options.addArguments("--window-size=1920,1080");
 			options.addArguments("--remote-allow-origins=*");
 			}		
 			driver = new ChromeDriver(options);
