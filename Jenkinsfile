@@ -21,12 +21,12 @@ pipeline {
         }
 
         stage('Run Tests') {
-            steps {
-                catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
-                bat 'mvn test -Dbrowser=chromeheadless || exit 0'
-            }
-           }
-        }      
+    steps {
+        catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
+            bat 'mvn test -Dbrowser=chromeheadless'
+        }
+    }
+} 
 
         stage('Report') {
             steps {
@@ -38,7 +38,7 @@ pipeline {
            steps {
         publishHTML([
             reportDir: 'reports',
-            reportFiles: 'ExtentReport.html',
+            reportFiles: 'index.html',
             reportName: 'Extent Report'
         ])
     }
