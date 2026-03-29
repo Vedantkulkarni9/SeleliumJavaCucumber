@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="7" passed="0" failed="1" skipped="6">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-29T08:05:38Z" name="Surefire suite" finished-at="2026-03-29T08:05:47Z" duration-ms="8313">
+  <suite started-at="2026-03-29T08:15:34Z" name="Surefire suite" finished-at="2026-03-29T08:15:42Z" duration-ms="8340">
     <groups>
       <group name="Purchase">
         <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@226a82c4]" name="submitOrder" class="rahulshettyacademy.tests.SubmitOrderTest"/>
@@ -14,9 +14,9 @@
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@77e4c80f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-03-29T08:05:38Z" name="Surefire test" finished-at="2026-03-29T08:05:47Z" duration-ms="8313">
+    <test started-at="2026-03-29T08:15:34Z" name="Surefire test" finished-at="2026-03-29T08:15:42Z" duration-ms="8340">
       <class name="rahulshettyacademy.tests.SubmitOrderTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@226a82c4]" started-at="2026-03-29T08:05:38Z" name="launchApplication" finished-at="2026-03-29T08:05:41Z" duration-ms="2295" status="FAIL">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@226a82c4]" started-at="2026-03-29T08:15:34Z" name="launchApplication" finished-at="2026-03-29T08:15:36Z" duration-ms="1769" status="FAIL">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 142
@@ -89,11 +89,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@226a82c4]" started-at="2026-03-29T08:05:41Z" name="tearDown" finished-at="2026-03-29T08:05:41Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@226a82c4]" started-at="2026-03-29T08:05:41Z" name="submitOrder" data-provider="getData" finished-at="2026-03-29T08:05:41Z" duration-ms="0" status="SKIP">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@226a82c4]" started-at="2026-03-29T08:15:36Z" name="submitOrder" data-provider="getData" finished-at="2026-03-29T08:15:36Z" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 142
@@ -166,7 +162,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@226a82c4]" started-at="2026-03-29T08:05:41Z" name="launchApplication" finished-at="2026-03-29T08:05:42Z" duration-ms="1208" status="FAIL">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@226a82c4]" started-at="2026-03-29T08:15:36Z" name="tearDown" finished-at="2026-03-29T08:15:36Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@226a82c4]" started-at="2026-03-29T08:15:36Z" name="launchApplication" finished-at="2026-03-29T08:15:37Z" duration-ms="1207" status="FAIL">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 142
@@ -239,11 +239,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@226a82c4]" started-at="2026-03-29T08:05:42Z" name="tearDown" finished-at="2026-03-29T08:05:42Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@226a82c4]" started-at="2026-03-29T08:05:42Z" name="submitOrder" data-provider="getData" finished-at="2026-03-29T08:05:42Z" duration-ms="0" status="SKIP">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@226a82c4]" started-at="2026-03-29T08:15:37Z" name="submitOrder" data-provider="getData" finished-at="2026-03-29T08:15:37Z" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 142
@@ -316,7 +312,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method signature="OrderHistoryTest()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@226a82c4]" started-at="2026-03-29T08:05:46Z" name="OrderHistoryTest" finished-at="2026-03-29T08:05:46Z" depends-on-methods="rahulshettyacademy.tests.SubmitOrderTest.submitOrder" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@226a82c4]" started-at="2026-03-29T08:15:37Z" name="tearDown" finished-at="2026-03-29T08:15:37Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="OrderHistoryTest()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@226a82c4]" started-at="2026-03-29T08:15:42Z" name="OrderHistoryTest" finished-at="2026-03-29T08:15:42Z" depends-on-methods="rahulshettyacademy.tests.SubmitOrderTest.submitOrder" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method SubmitOrderTest.OrderHistoryTest()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@226a82c4] depends on not successfully finished methods]]>
@@ -354,7 +354,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
         </test-method> <!-- OrderHistoryTest -->
       </class> <!-- rahulshettyacademy.tests.SubmitOrderTest -->
       <class name="rahulshettyacademy.tests.ErrorValidationsTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@35fc6dc4]" started-at="2026-03-29T08:05:44Z" name="launchApplication" finished-at="2026-03-29T08:05:45Z" duration-ms="1153" status="FAIL">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@35fc6dc4]" started-at="2026-03-29T08:15:39Z" name="launchApplication" finished-at="2026-03-29T08:15:40Z" duration-ms="1214" status="FAIL">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 142
@@ -427,11 +427,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@35fc6dc4]" started-at="2026-03-29T08:05:45Z" name="tearDown" finished-at="2026-03-29T08:05:45Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@35fc6dc4]" started-at="2026-03-29T08:15:40Z" name="tearDown" finished-at="2026-03-29T08:15:40Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@35fc6dc4]" started-at="2026-03-29T08:05:45Z" name="launchApplication" finished-at="2026-03-29T08:05:46Z" duration-ms="1233" status="FAIL">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@35fc6dc4]" started-at="2026-03-29T08:15:40Z" name="launchApplication" finished-at="2026-03-29T08:15:42Z" duration-ms="1767" status="FAIL">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 142
@@ -504,7 +504,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="LoginErrorValidation()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@35fc6dc4]" started-at="2026-03-29T08:05:45Z" name="LoginErrorValidation" finished-at="2026-03-29T08:05:45Z" duration-ms="0" status="SKIP">
+        <test-method signature="LoginErrorValidation()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@35fc6dc4]" started-at="2026-03-29T08:15:40Z" name="LoginErrorValidation" finished-at="2026-03-29T08:15:40Z" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 142
@@ -577,11 +577,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@35fc6dc4]" started-at="2026-03-29T08:05:46Z" name="tearDown" finished-at="2026-03-29T08:05:46Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="ProductErrorValidation()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@35fc6dc4]" started-at="2026-03-29T08:05:46Z" name="ProductErrorValidation" finished-at="2026-03-29T08:05:46Z" duration-ms="0" status="SKIP">
+        <test-method signature="ProductErrorValidation()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@35fc6dc4]" started-at="2026-03-29T08:15:42Z" name="ProductErrorValidation" finished-at="2026-03-29T08:15:42Z" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 142
@@ -654,9 +650,13 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@35fc6dc4]" started-at="2026-03-29T08:15:42Z" name="tearDown" finished-at="2026-03-29T08:15:42Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- rahulshettyacademy.tests.ErrorValidationsTest -->
       <class name="rahulshettyacademy.tests.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:rahulshettyacademy.tests.LoginTest@7fe8ea47]" started-at="2026-03-29T08:05:46Z" name="setup" finished-at="2026-03-29T08:05:47Z" duration-ms="611" status="FAIL">
+        <test-method is-config="true" signature="setup()[pri:0, instance:rahulshettyacademy.tests.LoginTest@7fe8ea47]" started-at="2026-03-29T08:15:42Z" name="setup" finished-at="2026-03-29T08:15:42Z" duration-ms="659" status="FAIL">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 142
@@ -728,7 +728,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testCheckboxSelection()[pri:0, instance:rahulshettyacademy.tests.LoginTest@7fe8ea47]" started-at="2026-03-29T08:05:47Z" name="testCheckboxSelection" finished-at="2026-03-29T08:05:47Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:rahulshettyacademy.tests.LoginTest@7fe8ea47]" started-at="2026-03-29T08:15:42Z" name="teardown" finished-at="2026-03-29T08:15:42Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="testCheckboxSelection()[pri:0, instance:rahulshettyacademy.tests.LoginTest@7fe8ea47]" started-at="2026-03-29T08:15:42Z" name="testCheckboxSelection" finished-at="2026-03-29T08:15:42Z" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 142
@@ -800,24 +804,20 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCheckboxSelection -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:rahulshettyacademy.tests.LoginTest@7fe8ea47]" started-at="2026-03-29T08:05:47Z" name="teardown" finished-at="2026-03-29T08:05:47Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
       </class> <!-- rahulshettyacademy.tests.LoginTest -->
       <class name="cucumber.TestNGTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.TestNGTestRunner@77e4c80f]" started-at="2026-03-29T08:05:42Z" name="setUpClass" finished-at="2026-03-29T08:05:42Z" duration-ms="371" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.TestNGTestRunner@77e4c80f]" started-at="2026-03-29T08:15:37Z" name="setUpClass" finished-at="2026-03-29T08:15:37Z" duration-ms="316" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@53311681]]>
+                <![CDATA[org.testng.TestRunner@5db6b845]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@77e4c80f]" started-at="2026-03-29T08:05:42Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-29T08:05:44Z" duration-ms="1250" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@77e4c80f]" started-at="2026-03-29T08:15:37Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-29T08:15:39Z" duration-ms="1246" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -871,7 +871,7 @@ at ✽.I landed on Ecommerce Page(file:///C:/Users/vedan/OneDrive/Documents/Sele
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.TestNGTestRunner@77e4c80f]" started-at="2026-03-29T08:05:44Z" name="tearDownClass" finished-at="2026-03-29T08:05:44Z" duration-ms="23" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.TestNGTestRunner@77e4c80f]" started-at="2026-03-29T08:15:39Z" name="tearDownClass" finished-at="2026-03-29T08:15:39Z" duration-ms="23" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

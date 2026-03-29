@@ -49,18 +49,25 @@ public class BaseTest {
 		//prop.getProperty("browser");
 
 		if (browserName.contains("chrome")) {
-			ChromeOptions options = new ChromeOptions();
-			WebDriverManager.chromedriver().setup();	
-			WebDriverManager.chromedriver().clearResolutionCache();
-			if(browserName.contains("headless")){
-			options.addArguments("--headless=new");
-			options.addArguments("--disable-gpu");
-			options.addArguments("--remote-allow-origins=*");
-			}		
-			driver = new ChromeDriver(options);
-			driver.manage().window().setSize(new Dimension(1440,900));//full screen
 
-		} else if (browserName.equalsIgnoreCase("firefox")) {
+		    ChromeOptions options = new ChromeOptions();
+
+		    // ✅ Clear cache FIRST, then setup
+		    WebDriverManager.chromedriver()
+		            .clearResolutionCache()
+		            .setup();
+
+		    if (browserName.contains("headless")) {
+		        options.addArguments("--headless=new");
+		        options.addArguments("--disable-gpu");
+		        options.addArguments("--window-size=1920,1080");
+		    } else {
+		        options.addArguments("--start-maximized");
+		    }
+
+		    driver = new ChromeDriver(options);
+		}
+		  else if (browserName.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.gecko.driver",
 					"/Users/rahulshetty//documents//geckodriver");
 			driver = new FirefoxDriver();
