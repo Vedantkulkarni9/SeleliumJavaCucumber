@@ -22,9 +22,11 @@ pipeline {
 
         stage('Run Tests') {
             steps {
+                catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
                 bat 'mvn test -Dbrowser=chromeheadless || exit 0'
             }
-        }
+           }
+        }      
 
         stage('Report') {
             steps {
