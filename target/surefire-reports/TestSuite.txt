@@ -1,65 +1,52 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 13, Failures: 6, Errors: 0, Skipped: 7, Time elapsed: 8.637 s <<< FAILURE! - in TestSuite
-launchApplication(rahulshettyacademy.tests.SubmitOrderTest)  Time elapsed: 2.082 s  <<< FAILURE!
-org.openqa.selenium.SessionNotCreatedException: 
-Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 142
-Current browser version is 146.0.7680.165 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'DELL', ip: '192.168.0.103'
+Tests run: 7, Failures: 4, Errors: 0, Skipped: 1, Time elapsed: 43.81 s <<< FAILURE! - in TestSuite
+submitOrder(rahulshettyacademy.tests.SubmitOrderTest)  Time elapsed: 1.902 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element is not clickable at point (850, 607)
+  (Session info: chrome=146.0.7680.165)
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Command: [68dcea43abf9bad6a6d20fe50445e18f, clickElement {id=f.F3BF3B49C1E507A4A43BF9435FCAFBB4.d.F0D990A6EAAA9FCE98C5DD252107EEE6.e.413}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\vedan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59658}, goog:processID: 9232, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59658/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (68dcea43abf9bad6a6d20fe50445e18f)] -> css selector: .mb-3]] -> css selector: .card-body button:last-of-type]
+Session ID: 68dcea43abf9bad6a6d20fe50445e18f
+	at rahulshettyacademy.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:45)
 
-launchApplication(rahulshettyacademy.tests.SubmitOrderTest)  Time elapsed: 3.292 s  <<< FAILURE!
-org.openqa.selenium.SessionNotCreatedException: 
-Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 142
-Current browser version is 146.0.7680.165 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'DELL', ip: '192.168.0.103'
+submitOrder(rahulshettyacademy.tests.SubmitOrderTest)  Time elapsed: 10.266 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.cssSelector: .mb-3 (tried for 5 second(s) with 500 milliseconds interval)
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\vedan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52896}, goog:processID: 8732, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52896/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8277bf8e14adf9daaf075f6af933fd98
+	at rahulshettyacademy.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:44)
 
-runScenario(cucumber.TestNGTestRunner)  Time elapsed: 1.247 s  <<< FAILURE!
-org.openqa.selenium.SessionNotCreatedException: 
-Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 142
-Current browser version is 146.0.7680.165 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'DELL', ip: '192.168.0.103'
+runScenario(cucumber.TestNGTestRunner)  Time elapsed: 4.889 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element is not clickable at point (850, 607)
+  (Session info: chrome=146.0.7680.165)
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
+Command: [4855cf81cae3f631d0a9dc9aa70ded6e, clickElement {id=f.5A41D34C57538377A9AA7F8EAD2D57DC.d.F2F679C2003ABF33BCE056FBF6A82ADF.e.413}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\vedan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59565}, goog:processID: 12004, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59565/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (4855cf81cae3f631d0a9dc9aa70ded6e)] -> css selector: .mb-3]] -> css selector: .card-body button:last-of-type]
+Session ID: 4855cf81cae3f631d0a9dc9aa70ded6e
 
-launchApplication(rahulshettyacademy.tests.ErrorValidationsTest)  Time elapsed: 2.485 s  <<< FAILURE!
-org.openqa.selenium.SessionNotCreatedException: 
-Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 142
-Current browser version is 146.0.7680.165 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'DELL', ip: '192.168.0.103'
+ProductErrorValidation(rahulshettyacademy.tests.ErrorValidationsTest)  Time elapsed: 1.986 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element is not clickable at point (850, 607)
+  (Session info: chrome=146.0.7680.165)
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
-
-launchApplication(rahulshettyacademy.tests.ErrorValidationsTest)  Time elapsed: 4.254 s  <<< FAILURE!
-org.openqa.selenium.SessionNotCreatedException: 
-Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 142
-Current browser version is 146.0.7680.165 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'DELL', ip: '192.168.0.103'
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
-
-setup(rahulshettyacademy.tests.LoginTest)  Time elapsed: 4.916 s  <<< FAILURE!
-org.openqa.selenium.SessionNotCreatedException: 
-Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 142
-Current browser version is 146.0.7680.165 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
-Host info: host: 'DELL', ip: '192.168.0.103'
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
-	at rahulshettyacademy.tests.LoginTest.setup(LoginTest.java:17)
+Command: [d59bd8baba472227b19e677d0e535c43, clickElement {id=f.6849F6C5A62F77356727B1DD6F47E07C.d.38BF04FB32BC3BE5A17883DB9EE93898.e.413}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\vedan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63817}, goog:processID: 9244, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63817/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (d59bd8baba472227b19e677d0e535c43)] -> css selector: .mb-3]] -> css selector: .card-body button:last-of-type]
+Session ID: d59bd8baba472227b19e677d0e535c43
+	at rahulshettyacademy.tests.ErrorValidationsTest.ProductErrorValidation(ErrorValidationsTest.java:38)
 

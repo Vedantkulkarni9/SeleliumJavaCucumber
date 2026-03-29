@@ -3,22 +3,6 @@
 <suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="1" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="rahulshettyacademy.tests.SubmitOrderTest">
-        <methods>
-          <include name="OrderHistoryTest"/>
-          <include name="tearDown"/>
-          <include name="submitOrder"/>
-          <include name="launchApplication"/>
-        </methods>
-      </class> <!-- rahulshettyacademy.tests.SubmitOrderTest -->
-      <class name="rahulshettyacademy.tests.ErrorValidationsTest">
-        <methods>
-          <include name="LoginErrorValidation"/>
-          <include name="tearDown"/>
-          <include name="ProductErrorValidation"/>
-          <include name="launchApplication"/>
-        </methods>
-      </class> <!-- rahulshettyacademy.tests.ErrorValidationsTest -->
       <class name="cucumber.TestNGTestRunner">
         <methods>
           <include name="runScenario" invocation-numbers="0"/>
@@ -26,13 +10,21 @@
           <include name="setUpClass"/>
         </methods>
       </class> <!-- cucumber.TestNGTestRunner -->
-      <class name="rahulshettyacademy.tests.LoginTest">
+      <class name="rahulshettyacademy.tests.ErrorValidationsTest">
         <methods>
-          <include name="setup"/>
-          <include name="testCheckboxSelection"/>
-          <include name="teardown"/>
+          <include name="tearDown"/>
+          <include name="ProductErrorValidation"/>
+          <include name="launchApplication"/>
         </methods>
-      </class> <!-- rahulshettyacademy.tests.LoginTest -->
+      </class> <!-- rahulshettyacademy.tests.ErrorValidationsTest -->
+      <class name="rahulshettyacademy.tests.SubmitOrderTest">
+        <methods>
+          <include name="OrderHistoryTest"/>
+          <include name="tearDown"/>
+          <include name="submitOrder" invocation-numbers="0 1"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- rahulshettyacademy.tests.SubmitOrderTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

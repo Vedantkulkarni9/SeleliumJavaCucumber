@@ -1,7 +1,6 @@
 package rahulshettyacademy.TestComponents;
 
 import org.testng.annotations.AfterMethod;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -24,16 +23,19 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import com.aventstack.extentreports.ExtentReports;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import rahulshettyacademy.pageobjects.LandingPage;
+import rahulshettyacademy.resources.ExtentReporterNG;
 
 public class BaseTest {
 
 	public WebDriver driver;
 	public LandingPage landingPage;
+	ExtentReports extent;
 
 	public WebDriver initializeDriver() throws IOException
 
@@ -52,10 +54,13 @@ public class BaseTest {
 
 		    ChromeOptions options = new ChromeOptions();
 
-		    // ✅ Clear cache FIRST, then setup
+		  //   ✅ Clear cache FIRST, then setup
 		    WebDriverManager.chromedriver()
 		            .clearResolutionCache()
-		            .setup();
+		           .setup();
+	//	    WebDriverManager.chromedriver()
+	 //       .driverVersion("146")
+	//        .setup();
 
 		    if (browserName.contains("headless")) {
 		        options.addArguments("--headless=new");
@@ -115,7 +120,7 @@ public class BaseTest {
 	@BeforeMethod(alwaysRun=true)
 	public LandingPage launchApplication() throws IOException
 	{
-		
+		extent = ExtentReporterNG.getReportObject();
 		 driver = initializeDriver();
 		  landingPage = new LandingPage(driver);
 		landingPage.goTo();
@@ -124,12 +129,19 @@ public class BaseTest {
 		
 	}
 	
-	@AfterMethod(alwaysRun=true)
 	
-	public void tearDown() {
+	
+	
+	@AfterMethod(alwaysRun=true)
+	public void tearDown()
+	{
 	    if (driver != null) {
 	        driver.quit();
 	    }
-	}	
+	    
+	    if (extent != null) {
+	        extent.flush(); // ✅ safe
+	    }
+	}
 	}
 
