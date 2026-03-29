@@ -65,6 +65,9 @@ Check logs: ${env.BUILD_URL}
             to: "vedantkulkarni9@gmail.com"
         )
     }
+       always {
+        junit '**/surefire-reports/*.xml'
+    }
 
     always {
         echo "Pipeline completed"
