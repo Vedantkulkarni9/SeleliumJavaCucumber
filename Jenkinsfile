@@ -74,5 +74,18 @@ Check logs: ${env.BUILD_URL}
                 to: "vedantkulkarni9@gmail.com"
             )
         }
+ unstable {   // ✅ ADD THIS
+        emailext (
+            subject: "⚠️ UNSTABLE: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+            body: """
+Tests are failing but pipeline continued.
+
+Check report:
+${env.BUILD_URL}
+""",
+            attachmentsPattern: '**/reports/ExtentReport.html',
+            to: "vedantkulkarni9@gmail.com"
+        )
+    }        
     }
 }
