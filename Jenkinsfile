@@ -43,6 +43,12 @@ pipeline {
         ])
     }
 }
+
+        stage('Debug Reports') {
+    steps {
+        bat 'dir reports'
+    }
+}
     }
 
     post {
@@ -93,7 +99,7 @@ Tests failed.
 Check report:
 ${env.BUILD_URL}
 """,
-        attachmentsPattern: '**/reports/index.html',   // ✅ FIXED
+        attachmentsPattern: 'reports/index.html'   
         to: "vedantkulkarni9@gmail.com"
     )
 }   
