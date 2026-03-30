@@ -33,36 +33,26 @@ public class Listeners extends BaseTest implements ITestListener{
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		// TODO Auto-generated method stub
-		extentTest.get().fail(result.getThrowable());//
-		
-		try {
-			driver = (WebDriver) result.getTestClass().getRealClass().getField("driver")
-					.get(result.getInstance());
-			
-		} catch (Exception e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
-		
-		
-		
-		String filePath = null;
-		try {
-			
-			filePath = getScreenshot(result.getMethod().getMethodName(),driver);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		extentTest.get().addScreenCaptureFromPath(filePath, result.getMethod().getMethodName());
-		
-		
-		//Screenshot, Attach to report
-		
-		
-	}
 
+	    extentTest.get().fail(result.getThrowable());
+
+	    WebDriver driver = null;
+
+	    try {
+	        driver = ((BaseTest) result.getInstance()).driver;   // ✅ Correct way
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    }
+
+	    if (driver != null) {
+	        try {
+	            String filePath = getScreenshot(result.getMethod().getMethodName(), driver);
+	            extentTest.get().addScreenCaptureFromPath(filePath, result.getMethod().getMethodName());
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        }
+	    }
+	}
 	@Override
 	public void onTestSkipped(ITestResult result) {
 		// TODO Auto-generated method stub
